@@ -5,11 +5,15 @@ open class Persona {
 
     var id =0
     var nombre=""
-    var apellido=""
-    var dni = 0
-    var direccion : Direccion
 
-//aa
+    var apellido=""
+
+    var dni = 0
+        get() = field
+        set(value) {
+            field = verificarDNI(value)
+        }
+    var direccion : Direccion
 
     constructor(
         id: Int,
@@ -51,6 +55,11 @@ open class Persona {
     }
 
 
-
+    fun verificarDNI(dni:Int): Int {
+        if (dni==30000000){
+        }
+        println("Esta persona Posee Certificado Único de Discapacidad (CUD) ")
+        return dni
+    }
 
 }
