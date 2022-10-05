@@ -28,7 +28,6 @@ class Empleado : Persona {
 
     override fun CalcularPagos(Valorhora:Double, HorasTrabajadas: Int):Double {
         this.sueldo=Valorhora*HorasTrabajadas.toDouble()
-        println("Sueldo establecido")
         return sueldo
     }
 

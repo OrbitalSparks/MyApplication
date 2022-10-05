@@ -57,8 +57,8 @@ open class Persona {
 
     fun verificarDNI(dni:Int): Int {
         if (dni==30000000){
+            println("Esta persona Posee Certificado Único de Discapacidad (CUD) ")
         }
-        println("Esta persona Posee Certificado Único de Discapacidad (CUD) ")
         return dni
     }
 
